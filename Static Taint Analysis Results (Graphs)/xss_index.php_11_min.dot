@@ -1,0 +1,27 @@
+digraph cfg {
+  label="xss_index.php_11_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/var/www/html/schoolmate/AddAssignment.php : 3\nVar: _t0_30\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/var/www/html/schoolmate/AddAssignment.php : 3\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="/var/www/html/schoolmate/AddAssignment.php : 3\nbuiltin function:\n.\n"];
+  n4 [shape=ellipse, label="/var/www/html/schoolmate/AddAssignment.php : 3\nbuiltin function:\n.\n"];
+  n5 [shape=ellipse, label="/var/www/html/schoolmate/AddAssignment.php : 3\nbuiltin function:\n.\n"];
+  n6 [shape=ellipse, label="/var/www/html/schoolmate/AddAssignment.php : 3\nbuiltin function:\n.\n"];
+  n7 [shape=ellipse, label="/var/www/html/schoolmate/AddAssignment.php : 3\nbuiltin function:\n.\n"];
+  n8 [shape=box, label="/var/www/html/schoolmate/AddAssignment.php : 3\nVar: $page2\nFunc: _main\n"];
+  n9 [shape=box, label="/var/www/html/schoolmate/TeacherMain.php : 8\nVar: $_POST[page2]\nFunc: _superglobals\n",style=filled];
+  n10 [shape=box, label="/var/www/html/schoolmate/AddAssignment.php : 3\nVar: $_POST[selectclass]\nFunc: _superglobals\n",style=filled];
+  n11 [shape=box, label="/var/www/html/schoolmate/AddAssignment.php : 3\nVar: $page\nFunc: _main\n"];
+  n12 [shape=box, label="/var/www/html/schoolmate/index.php : 36\nVar: $_POST[page]\nFunc: _superglobals\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n3 -> n11;
+  n4 -> n5;
+  n5 -> n6;
+  n5 -> n10;
+  n6 -> n7;
+  n7 -> n8;
+  n8 -> n9;
+  n11 -> n12;
+}

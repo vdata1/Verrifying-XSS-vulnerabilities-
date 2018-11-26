@@ -1,0 +1,13 @@
+digraph cfg {
+  label="xss_index.php_4_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/var/www/html/schoolmate/maketop.php : 2\nVar: _t0_25\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/var/www/html/schoolmate/maketop.php : 2\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="/var/www/html/schoolmate/maketop.php : 2\nbuiltin function:\n.\n"];
+  n4 [shape=box, label="/var/www/html/schoolmate/maketop.php : 2\nVar: $schoolname\nFunc: _main\n"];
+  n5 [shape=ellipse, label="/var/www/html/schoolmate/header.php : 6\nbuiltin function:\nmysql_result\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n4 -> n5;
+}

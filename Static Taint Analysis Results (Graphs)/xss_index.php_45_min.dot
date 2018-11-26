@@ -1,0 +1,31 @@
+digraph cfg {
+  label="xss_index.php_45_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/var/www/html/schoolmate/EditTerm.php : 10\nVar: _t0_56\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/var/www/html/schoolmate/EditTerm.php : 10\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="/var/www/html/schoolmate/EditTerm.php : 23\nbuiltin function:\n.\n"];
+  n4 [shape=ellipse, label="/var/www/html/schoolmate/EditTerm.php : 23\nbuiltin function:\n.\n"];
+  n5 [shape=ellipse, label="/var/www/html/schoolmate/EditTerm.php : 23\nbuiltin function:\n.\n"];
+  n6 [shape=ellipse, label="/var/www/html/schoolmate/EditTerm.php : 23\nbuiltin function:\n.\n"];
+  n7 [shape=ellipse, label="/var/www/html/schoolmate/EditTerm.php : 23\nbuiltin function:\n.\n"];
+  n8 [shape=ellipse, label="/var/www/html/schoolmate/EditTerm.php : 23\nbuiltin function:\n.\n"];
+  n9 [shape=box, label="/var/www/html/schoolmate/EditTerm.php : 23\nVar: $id[0]\nFunc: _main\n"];
+  n10 [shape=box, label="/var/www/html/schoolmate/EditTerm.php : 2\nVar: $_POST[delete]\nFunc: _superglobals\n",style=filled];
+  n11 [shape=box, label="/var/www/html/schoolmate/EditTerm.php : 23\nVar: $page2\nFunc: _main\n"];
+  n12 [shape=box, label="/var/www/html/schoolmate/AdminMain.php : 7\nVar: $_POST[page2]\nFunc: _superglobals\n",style=filled];
+  n13 [shape=box, label="/var/www/html/schoolmate/EditTerm.php : 23\nVar: $page\nFunc: _main\n"];
+  n14 [shape=box, label="/var/www/html/schoolmate/index.php : 36\nVar: $_POST[page]\nFunc: _superglobals\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n4 -> n5;
+  n4 -> n13;
+  n5 -> n6;
+  n6 -> n7;
+  n6 -> n11;
+  n7 -> n8;
+  n8 -> n9;
+  n9 -> n10;
+  n11 -> n12;
+  n13 -> n14;
+}

@@ -1,0 +1,13 @@
+digraph cfg {
+  label="xss_index.php_56_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/var/www/html/schoolmate/Login.php : 15\nVar: _t0_9\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/var/www/html/schoolmate/Login.php : 15\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="/var/www/html/schoolmate/Login.php : 15\nbuiltin function:\n.\n"];
+  n4 [shape=box, label="/var/www/html/schoolmate/Login.php : 15\nVar: $text\nFunc: _main\n"];
+  n5 [shape=ellipse, label="/var/www/html/schoolmate/Login.php : 13\nbuiltin function:\nmysql_result\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n4 -> n5;
+}
